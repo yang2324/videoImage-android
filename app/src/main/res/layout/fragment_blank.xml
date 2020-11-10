@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_menu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <!--        TabLayout-->
+        <com.google.android.material.tabs.TabLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-50dp"
+            android:id="@+id/tablayout"
+            android:background="@drawable/swiper_tg_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:tabBackground="@drawable/swiper_item"
+            app:tabGravity="center"
+            app:tabIndicatorColor="#fff"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="0dp"
+            app:tabMode="scrollable"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="#333"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="#fff" />
+
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-32dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/swiper_sum_shape"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/img1"/>
+
+            <TextView
+                android:id="@+id/number"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
